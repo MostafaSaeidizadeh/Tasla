@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView
+    xmlns:tools="http://schemas.android.com/tools"
+    app:neumorph_backgroundColor="@color/new_background"
+    app:neumorph_shapeAppearance="@style/NeumorphismCard"
+    app:neumorph_shadowElevation="4dp"
+    app:neumorph_shadowColorLight="@color/new_shadow2"
+    app:neumorph_shadowColorDark="@color/new_shadow1"
+    app:neumorph_shapeType="basin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="170dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/imgcgecking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_selected" />
+
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/text_white"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engline"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5" />
+
+        <TextView
+            android:textColor="@color/text_gray"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slooping Mode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</soup.neumorphism.NeumorphCardView>
